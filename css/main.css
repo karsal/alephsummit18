@@ -2252,7 +2252,7 @@ html.no-csstransitions .home-content__main {
 
 .stats__count {
     font-family: "montserrat-bold", sans-serif;
-    font-size: 8.4rem;
+    font-size: 7.0rem;
     line-height: 1;
     color: #FFFFFF;
     position: relative;
@@ -2328,41 +2328,26 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 600px) {
-    .s-about {
-        padding-top: 12rem;
-    }
     .about-desc {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
-    .about-stats {
-        padding-top: 0;
+    .stats__count {
+        font-size: 3.8rem;
+        padding: 0 1rem;
     }
     .stats__col {
-        margin: 0;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        position: relative;
+        padding: 0;
     }
-    .stats__col::after {
-        content: "";
-        display: block;
-        height: 1px;
-        width: 250px;
-        background-color: rgba(255, 255, 255, 0.25);
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        margin-left: -125px;
+    .header-logo a {
+        margin-top: -80px;
     }
-    .stats__col:last-child::after {
-        display: none;
+    .header-logo a img {
+        width: 50px;
     }
-    .stats__col:nth-child(n) {
-        border: none;
+    .home-content {
+        background: none;
     }
-    .about__line {
-        height: 7.2rem;
-    }
+    
 }
 
 @media only screen and (max-width: 400px) {
@@ -2370,8 +2355,22 @@ html.no-csstransitions .home-content__main {
         font-size: 1.8rem;
     }
     .stats__count {
-        font-size: 7.8rem;
+        font-size: 3.8rem;
+        padding: 0 1rem;
     }
+    .stats__col {
+        padding: 0;
+    }
+    .header-logo a {
+        margin-top: -80px;
+    }
+    .header-logo a img {
+        width: 50px;
+    }
+    .home-content {
+        background: none;
+    }
+
 }
 
 
@@ -3542,6 +3541,7 @@ footer .row {
  * responsive:
  * footer
  * ------------------------------------------------------------------- */
+
 @media only screen and (max-width: 900px) {
     .footer-main .left {
         padding-right: 20px;
@@ -3660,3 +3660,41 @@ CUSTOM ADDED
     letter-spacing: 3.1px;
     color: #4b06f4;
 }
+
+.hide-me {
+    height: 1px;
+    display: block;
+}
+
+/* custom media q */
+@media only screen and (max-width: 1200px) {
+    .home-content {
+        background: none;
+    }
+
+    .stats__col.hrs {
+        border-right: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .stats__col.mins {
+        border-right: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .stats__col.secs {
+        border-right: 0;
+    }
+    .stats__count {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .stats__count {
+        font-size: 4rem;
+    }
+ }
+
+ 
+@media only screen and (max-width: 600px) {
+    .stats__count {
+        font-size: 3.5rem;
+    }
+ }
